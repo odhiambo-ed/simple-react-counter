@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Count: {count}</h1>
-        <div className="d-flex flex-col">
+        <div className="d-flex flex-col gap-3">
           <button onClick={() => setCount(count + 1)} className='btn btn-success'>Increase</button>
           <button onClick={() => setCount(count - 1)} className='btn btn-danger'>Decrease</button>
         </div>
