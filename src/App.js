@@ -6,9 +6,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Hello, World!
-        </p>
+        <h1>Count: {count}</h1>
+        <div className="d-flex flex-col">
+          <button onClick={() => setCount(count + 1)} className='btn btn-success'>Increase</button>
+          <button onClick={() => setCount(count - 1)} className='btn btn-danger'>Decrease</button>
+        </div>
       </header>
     </div>
   );
